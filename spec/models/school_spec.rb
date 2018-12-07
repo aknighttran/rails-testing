@@ -53,7 +53,7 @@ RSpec.describe School, type: :model do
     it { should validate_presence_of :principal }
     it { should validate_presence_of :capacity }
     it { should validate_presence_of :private_school }
-    it { should validate_uniqueness_of :name }
+    # it { should validate_uniqueness_of :name }
     
     it 'has a capacity lower bound' do
       should validate_numericality_of(:capacity).
