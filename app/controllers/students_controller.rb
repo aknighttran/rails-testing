@@ -50,6 +50,7 @@ class StudentsController < ApplicationController
 
     # Use callbacks to share common setup or constraints between actions.
     def set_school
+      # binding.pry
       @school = School.find(params[:school_id])
     end
 
